@@ -69,3 +69,37 @@ SetIKRotationWeight()
 SetLookAtWeight()
 SetIKRotation()
 SetLookAtPosition()：主要表现为看向指定方向（转头）
+
+## toggle组件（切换组件）
+
+可以从来做多选框，在多个选项中选择一个
+![toggle](../../../图片/Toggle.png)
+常用选项：
+Interactable:是否可以选择
+Is On:是否被激活
+Graphic：被选中时显示的图片（添加到里面后未被选中时不会显示）
+gruop：可以将多个toggle加入到一个gruop中，只能选中其中的一个
+
+### onValueChanged
+
+面板上添加时，这个只会检测到值是否变化，并不能检测到他的值是否为true or false，所以如果要接收他的值是否为true（或者false），应该在脚本中添加事件监听，例如：
+
+```csharp
+void Awake()
+    {
+        //添加监听
+        GetComponent<Toggle>().onValueChanged.AddListener(OnValueChanged);
+private void OnValueChanged(bool value)
+    {
+        if (value)
+        {
+            //要执行的事件
+        }
+  
+    }
+```
+
+## mask（ui中的mask遮罩）
+
+遮罩不是挡住后面的，是只显示挡住的，
+创建一个圆形的遮罩，在这个圆形遮罩下面创建子物体Image，Image只会显示mask的范围，超出范围的将不会显示，可以用来制作圆形头像（头像文件可以不用裁剪，直接替换就可以）
