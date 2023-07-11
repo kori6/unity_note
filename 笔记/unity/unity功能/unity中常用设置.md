@@ -68,7 +68,7 @@ public void PlayShoutAuio()
 
 ### 2.转换字体
 
-![转换字体](image.png)
+![转换字体](../../../图片/转换字体.png)
 点击Font Asset Creator
 ![Alt text](../../../图片/字体转换器.png)
 

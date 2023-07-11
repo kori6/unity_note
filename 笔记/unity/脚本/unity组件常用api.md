@@ -19,7 +19,7 @@ target 要导航到的目标点.
 public static Vector3 Project (Vector3 vector, Vector3 onNormal);
 将向量投影到另一个向量上。
 要理解向量投影，请想象 onNormal 位于一条指向其方向的线上。 这条线上有一个最靠近 vector 尖端的点。 投影不过是重新缩放 /onNormal/，以使其到达线上的那个点。
-![投影](../../图片/投影.png)
+![投影](../../../图片/投影.png)
 
 ## animator（动画组件）
 
@@ -40,7 +40,7 @@ public static Vector3 Project (Vector3 vector, Vector3 onNormal);
 ### IK动画使用步骤
 
 1.先设置某一个动画层是否启用IK
-![IK设置](../../图片/IK设置.png)
+![IK设置](../../../图片/IK设置.png)
 2.在代码中先设置iK权重（表示开启不开启）
 
 ```csharp
