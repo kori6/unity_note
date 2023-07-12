@@ -103,3 +103,17 @@ private void OnValueChanged(bool value)
 
 遮罩不是挡住后面的，是只显示挡住的，
 创建一个圆形的遮罩，在这个圆形遮罩下面创建子物体Image，Image只会显示mask的范围，超出范围的将不会显示，可以用来制作圆形头像（头像文件可以不用裁剪，直接替换就可以）
+
+### 绝对值
+
+Mathf.ABS(float value);
+
+## transform
+
+### 绕某点旋转
+
+```c#
+ child.RotateAround(transform.position（绕的旋转的点）, Vector3.back（绕那个轴旋转）, 1（旋转的角度）);
+```
+
+
