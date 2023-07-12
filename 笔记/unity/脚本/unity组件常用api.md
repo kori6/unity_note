@@ -115,5 +115,3 @@ Mathf.ABS(float value);
 ```c#
  child.RotateAround(transform.position（绕的旋转的点）, Vector3.back（绕那个轴旋转）, 1（旋转的角度）);
 ```
-
-
