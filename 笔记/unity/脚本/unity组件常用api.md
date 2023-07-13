@@ -115,3 +115,9 @@ Mathf.ABS(float value);
 ```c#
  child.RotateAround(transform.position（绕的旋转的点）, Vector3.back（绕那个轴旋转）, 1（旋转的角度）);
 ```
+
+## buttom
+
+1.用动画来实现按钮点击/按下时的效果
+![button](../../../图片/button.png)
+在这里选择animation，创建一个动画状态机，设置好对应的动画

@@ -81,3 +81,15 @@ public void PlayShoutAuio()
 （2）Screen Space -OverLay 始终显示在最前面
 （3）World Space就更简单了，就是把UI当做三维物体来处理。
 3.改锚点
+
+## 隐藏鼠标
+
+Cursor.visible = true;//鼠标显示
+
+Cursor.visible = false;//鼠标隐藏
+
+Cursor.lockState = CursorLockMode.Locked;//鼠标锁定并隐藏
+
+Cursor.lockState = CursorLockMode.None;//鼠标解锁并显示
+
+Cursor.lockState = CursorLockMode.Confined;//鼠标限制在Game视图
