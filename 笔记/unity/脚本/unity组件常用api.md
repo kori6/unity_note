@@ -121,3 +121,7 @@ Mathf.ABS(float value);
 1.用动画来实现按钮点击/按下时的效果
 ![button](../../../图片/button.png)
 在这里选择animation，创建一个动画状态机，设置好对应的动画
+
+## canvas gruop（画布组）
+
+1.修改aloha值可以直接修改该组件下的所有子物体的aloha值

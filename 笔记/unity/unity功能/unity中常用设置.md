@@ -93,3 +93,7 @@ Cursor.lockState = CursorLockMode.Locked;//鼠标锁定并隐藏
 Cursor.lockState = CursorLockMode.None;//鼠标解锁并显示
 
 Cursor.lockState = CursorLockMode.Confined;//鼠标限制在Game视图
+
+## 模型同时添加动画和刚体时模型飞走
+
+修改animator中的update mode,修改为animator physics

@@ -261,3 +261,7 @@
         //tweener.Elapsed();
 
 ```
+
+## 曲线 AnimationCurve
+
+AnimationCurve.Evaluate（），获取对应时间曲线的值
