@@ -52,3 +52,9 @@ console.write("hello world")}
 ## 加粗
 
 **加粗**1
+
+## 安装插件
+
+markdownlint 语法检查
+markdown All in one
+markdown preview 预览
