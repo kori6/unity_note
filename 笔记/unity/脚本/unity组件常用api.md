@@ -125,6 +125,9 @@ Mathf.ABS(float value);
 ## canvas gruop（画布组）
 
 1.修改aloha值可以直接修改该组件下的所有子物体的aloha值
+2.Interactable可以修改面板下的所有组件的可交互性
+3.Blocks RayCasts 可以控制所有子物体是否能被射线检测到，也可以用来控制交互
+4.Ignore parent Group 是否忽略父级的gruop,可以用来控制一个面板上除了这个物体以外所有物品透明等效果
 
 ## TMP_TEXT
 
