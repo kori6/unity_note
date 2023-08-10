@@ -116,6 +116,10 @@ Mathf.ABS(float value);
  child.RotateAround(transform.position（绕的旋转的点）, Vector3.back（绕那个轴旋转）, 1（旋转的角度）);
 ```
 
+### 调整面板成为第一个子物体
+
+transform.SetAsFirstSibling();
+
 ## buttom
 
 1.用动画来实现按钮点击/按下时的效果
