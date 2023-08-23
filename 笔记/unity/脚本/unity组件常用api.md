@@ -141,6 +141,41 @@ transform.SetAsFirstSibling();
 \<i>输入文字 斜体
 <size=72>设置字号 <size=150%>设置为原字号的150%
 
+### 重写TMP_text
+
+在脚本中继承TextMeshProUGUI可以创建出属于自己的tmp_text,可以设计出自己的特效等效果。
+
+### 预处理器 ITextPreprocessor
+
+输入框处理输入的文字的接口
+PreprocessText(String){}
+这个方法中的string就是输入框中的文字
+返回值是最终显示的文字
+
+### 常用富文本
+
+![常用富文本](../../../图片/tmp常用富文本.png)
+
+- 从上到下分别为
+- 加粗
+- 斜体
+- 下划线
+- 删除线
+- 上标
+- 下标
+- 文字高亮
+
+![常用富文本2](../../../图片/tmp常用富文本2.png)
+
+- 从上到下分别为
+- 全部大写
+- 小型大写字母
+- 字间距
+- 字符转换为等宽的字体
+- 设置行间距
+- 不自动换行
+- 设置字体大小
+
 ### 自定义样式
 
 在TextMeshPro/Resources/Style Sheets/Default Style Sheet这个文件中可以先预设好一些样式，在使用中可以直接输入\<style="样式的名字"> 输入的文字 \</style>来直接调用，免除了一个一个样式的输入
@@ -163,3 +198,11 @@ tmp做出来的字体可以无限放大不丢失精度，并且因为是贴图�
 
 ## 脚本化对象 scriptableObject
 
+1.脚本中继承ScriptableObject
+2.添加特性[CreateAssetMenu(fileName = "文件默认名称", menuName = "文件夹名/菜单中显示的名字")]
+
+## Content Size Fitter 让组件大小适配内容
+
+根据有多少内容来动态变化组件的大小
+例如：文本框中使用时，根据不同的字体大小自动调整文本框大小
+例如：Scroll View中根据有多少内容来自动拉伸
