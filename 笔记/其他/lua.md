@@ -95,3 +95,47 @@ end
 ```lua
 require("<模块名>")
 ```
+
+## 元表
+
+1.元表是用来储存元方法的
+2.元表是来改变表的默认行为的，例如当访问一个不存在的值时/给一个不存在的值赋值时/两个表相加等行为
+3.元表的键是原方法的名称，值是函数
+
+## 元方法
+
+### __index
+
+1.是用来改变获取表中不存在的数据时的方法
+2.如果__index={} 是一个表而不是一个方法，当获取不存在的值时就会来__index里面找，如果这里是一个方法
+
+```lua
+__index = function(mytable, key)
+    if key == "key2" then
+      return "metatablevalue"
+    else
+      return nil
+    end
+  end
+```
+
+当获取不存在的值时就会调用这个方法。
+可以实现的效果有当有地方获取不存在的值时输出一个错误信息
+
+### __newindex
+
+和上面相反，这个是给不存在的键赋值时会调用的
+一般情况下直接给一个表赋值时会创建出新的键值对
+但如果设置了元表，并且元表中有__newindex={}
+那么新创建的键值对会直接到了元表中的__newindex中的这个表中
+如果这里是方法，则和上面一样，会调用上面的方法，如果想要正常赋值
+则可以使用rawset(t,k,v)
+
+```lua
+__newindex = function(table, key, value)
+        print("Assigning value '" .. value .. "' to key '" .. key .. "'.")
+        rawset(table, key, value)  -- 使用rawset来进行实际的赋值操作
+    end
+```
+
+如果这里使用t[k]=v来直接进行赋值，则会发生递归，会一直调用这个方法，直到栈溢出

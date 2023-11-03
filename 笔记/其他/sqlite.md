@@ -14,13 +14,13 @@
 
 ```csharp
 connection = new SqliteConnection(new SqliteConnectionStringBuilder() { DataSource = dbPath }.ToString());
-``````
+```
 
 括号内传入的是字符串地址字符串格式为
 
 ```dotnetcli
 string path="DataSource = C:\Program Files (x86)"
-``````
+```
 
 >2 打开数据库
  connection.Open();
@@ -411,4 +411,4 @@ public class SqlDbCommand :sqlDbConnect
     }
 }
 
-``````
+```
