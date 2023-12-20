@@ -188,7 +188,7 @@
 
 ```csharp
 ////在动画播放完成之后执行
-        //transform.DOMove(Vector3.one, 2).OnComplete()+=() => { Debug.Log("回调"); });
+        //transform.DOMove(Vector3.one, 2).OnComplete+=() => { Debug.Log("回调"); });
         ////动画被杀死时
         //transform.DOMove(Vector3.one, 2).OnKill();
         ////在动画播放时（暂停重新开始播放时也会执行
