@@ -106,7 +106,7 @@
 
           //创建一个队列 将执行的语句添加到队列中，可以按顺序一个一个执行eg：同时写两个domove时，执行执行最新的，将两个move放到队列中时，会先执行第一个 再执行第二个
         //创建一个队列
-        //Sequence quence = DOTween.Sequence();
+        //Sequence quence = 8.Sequence();
         ////添加 参数类型为Tween //do方法的返回值都为Tween，所以直接传入do方法
         //quence.Append(transform.DOMove(Vector3.one, 2));//0-2
         //quence.Join(transform.DOScale(Vector3.one * 5, 2));
