@@ -219,6 +219,11 @@ tmp做出来的字体可以无限放大不丢失精度，并且因为是贴图�
 ![MenuItem](../../../图片/Menuitem.png)
 ![菜单栏界面](../../../图片/Editor.png)
 
+### 菜单栏中弹出新的窗口
+
+继承EditorWindows,然后再gui中编写界面
+需要写一个静态函数来控制打开窗口
+
 ## Material 材质球
 
 ### 1.Rendering Mode 渲染模式(需要改变透明度的时候改)
